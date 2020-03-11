@@ -117,21 +117,21 @@ public final class R {
         public static final int action_image = 0x7f070031;
         public static final int action_text = 0x7f070037;
         public static final int actions = 0x7f070038;
-        public static final int async = 0x7f07003d;
-        public static final int blocking = 0x7f070040;
-        public static final int chronometer = 0x7f070048;
-        public static final int dialog_button = 0x7f070050;
-        public static final int forever = 0x7f070059;
-        public static final int icon = 0x7f07005f;
-        public static final int icon_group = 0x7f070060;
-        public static final int info = 0x7f070063;
-        public static final int italic = 0x7f070065;
-        public static final int line1 = 0x7f070067;
-        public static final int line3 = 0x7f070068;
-        public static final int normal = 0x7f070070;
-        public static final int notification_background = 0x7f070071;
-        public static final int notification_main_column = 0x7f070072;
-        public static final int notification_main_column_container = 0x7f070073;
+        public static final int async = 0x7f07003e;
+        public static final int blocking = 0x7f070041;
+        public static final int chronometer = 0x7f070049;
+        public static final int dialog_button = 0x7f070051;
+        public static final int forever = 0x7f07005a;
+        public static final int icon = 0x7f070060;
+        public static final int icon_group = 0x7f070061;
+        public static final int info = 0x7f070064;
+        public static final int italic = 0x7f070066;
+        public static final int line1 = 0x7f070068;
+        public static final int line3 = 0x7f070069;
+        public static final int normal = 0x7f070071;
+        public static final int notification_background = 0x7f070072;
+        public static final int notification_main_column = 0x7f070073;
+        public static final int notification_main_column_container = 0x7f070074;
         public static final int right_icon = 0x7f070080;
         public static final int right_side = 0x7f070081;
         public static final int tag_accessibility_actions = 0x7f0700a1;
@@ -166,7 +166,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0c0020;
+        public static final int status_bar_notification_info_overflow = 0x7f0c0021;
     }
     public static final class style {
         private style() {}

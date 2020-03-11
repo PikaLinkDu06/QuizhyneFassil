@@ -736,13 +736,14 @@ id activity_chooser_view_content
 id add
 id alertTitle
 id always
+id areaRadiogroup
 id async
 id barrier
 id beginning
 id blocking
 id bottom
-id boutonSubmit
 id buttonPanel
+id categoryRadiogroup
 id center_vertical
 id chains
 id checkbox
@@ -800,7 +801,6 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
-id radiogroup
 id recettes
 id right
 id right_icon
@@ -947,6 +947,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string canada
+string categorie_filter
 string choix_filtre
 string france
 string search_menu_title

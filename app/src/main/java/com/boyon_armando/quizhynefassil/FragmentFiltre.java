@@ -1,5 +1,6 @@
 package com.boyon_armando.quizhynefassil;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -19,42 +24,56 @@ public class FragmentFiltre extends Fragment {
     Fragment frag;
     FragmentTransaction fragTransaction;
 
-    ArrayList<String> listeFiltresArea ;
+    public ArrayList<String> listeFiltresArea = new ArrayList<>() ;
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_filtre, container, false);
 
-        final Button submit = rootView.findViewById(R.id.boutonSubmit) ;
-        final RadioGroup rg = rootView.findViewById(R.id.radiogroup) ;
+        new GetFilter(rootView).execute() ;
 
-        GetFilter gf = new GetFilter() ;
-        gf.execute() ;
+        final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup) ;
+        final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup) ;
 
-        listeFiltresArea = gf.getArea() ;
-
-            for(String S : listeFiltresArea) {
-                Log.d("TEST", S) ;
-                RadioButton rb = new RadioButton(getContext()) ;
-                rb.setText(S) ;
-                rb.setId(View.generateViewId()) ;
-                rg.addView(rb) ;
-        }
-
-        submit.setOnClickListener(new View.OnClickListener() {
+        arg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
-                frag = new FragmentRecette() ;
-                Bundle args = new Bundle() ;
-                args.putString("filtre", "TEST") ;
-                frag.setArguments(args) ;
-
-                fragTransaction = getFragmentManager().beginTransaction().replace(R.id.recettes, frag) ;
-                fragTransaction.commit() ;
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if(crg.getCheckedRadioButtonId() != -1 && arg.getCheckedRadioButtonId() != -1) {
+                    crg.clearCheck();
+                    arg.check(i) ;
+                }
+                else {
+                    RadioButton currentCheckedButton = rootView.findViewById(arg.getCheckedRadioButtonId()) ;
+                    changeFragment(currentCheckedButton.getText().toString()) ;
+                }
             }
         });
 
+        crg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if(arg.getCheckedRadioButtonId() != -1 && crg.getCheckedRadioButtonId() != -1) {
+                    arg.clearCheck() ;
+                    crg.check(i) ;
+                }
+                else {
+                    RadioButton currentCheckedButton = rootView.findViewById(crg.getCheckedRadioButtonId()) ;
+                    changeFragment(currentCheckedButton.getText().toString()) ;
+                }
+            }
+        }) ;
         return rootView ;
     }
+
+    public void changeFragment(String filter) {
+        frag = new FragmentRecette() ;
+        Bundle args = new Bundle() ;
+        args.putString("filtre", filter) ;
+        frag.setArguments(args) ;
+
+        fragTransaction = getFragmentManager().beginTransaction().replace(R.id.recettes, frag) ;
+        fragTransaction.commit() ;
+    }
+
 
 }

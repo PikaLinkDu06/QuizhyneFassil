@@ -6,4 +6,5 @@
     <string name="submit">Submit</string>
 
     <string name="zone_filter">Par zone : </string>
+    <string name="categorie_filter">Par catégorie : </string>
 </resources>
