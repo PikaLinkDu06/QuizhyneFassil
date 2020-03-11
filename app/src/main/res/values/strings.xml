@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QuizhyneFassil</string>
+    <string name="choix_filtre">Choisissez un filtre : </string>
+    <string name="canada">Canada</string>
+    <string name="france">France</string>
+    <string name="submit">Submit</string>
+
+    <string name="zone_filter">Par zone : </string>
 </resources>

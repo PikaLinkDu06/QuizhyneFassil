@@ -741,6 +741,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id boutonSubmit
 id buttonPanel
 id center_vertical
 id chains
@@ -762,6 +763,7 @@ id edit_query
 id end
 id expand_activities_button
 id expanded_menu
+id filtre
 id forever
 id gone
 id group_divider
@@ -798,6 +800,8 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id radiogroup
+id recettes
 id right
 id right_icon
 id right_side
@@ -840,6 +844,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id test
 id text
 id text2
 id textSpacerNoButtons
@@ -899,6 +904,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout custom_dialog
+layout fragment_filtre
+layout fragment_recettes
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -939,8 +946,13 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string canada
+string choix_filtre
+string france
 string search_menu_title
 string status_bar_notification_info_overflow
+string submit
+string zone_filter
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
