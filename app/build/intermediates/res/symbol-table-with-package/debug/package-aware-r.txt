@@ -391,6 +391,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -776,6 +777,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageRecette
 id info
 id ingredientRadiogroup
 id invisible
@@ -851,6 +853,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id texteRecette
 id time
 id title
 id titleDividerNoCustom
@@ -914,6 +917,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recipe_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1119,6 +1123,7 @@ style Base_Widget_AppCompat_TextView
 style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
+style HiddenTitleTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_ThemeOverlay_AppCompat

@@ -6,6 +6,7 @@ public class Recipe {
 
     private int recipeId ;
     private String recipeName ;
+    private String recipePhotoURL ;
     private ArrayList<String> recipeSteps ;
 
     public Recipe(int id, String name, ArrayList<String> steps) {
@@ -14,9 +15,18 @@ public class Recipe {
         this.recipeSteps = steps ;
     }
 
-    public Recipe(int id, String name) {
+    public String getRecipePhotoURL() {
+        return recipePhotoURL;
+    }
+
+    public void setRecipePhotoURL(String recipePhotoURL) {
+        this.recipePhotoURL = recipePhotoURL;
+    }
+
+    public Recipe(int id, String name, String photo) {
         this.recipeId = id ;
         this.recipeName = name ;
+        this.recipePhotoURL = photo ;
         recipeSteps = new ArrayList<>() ;
     }
 

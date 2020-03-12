@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/choix_filtre"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:layout_gravity="center">
     </TextView>
 
@@ -30,7 +30,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/zone_filter"
-          android:textSize="15dp" >
+          android:textSize="20dp" >
         </TextView>
     </RadioGroup>
     
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/categorie_filter"
-            android:textSize="15dp" >
+            android:textSize="20dp" >
         </TextView>
     </RadioGroup>
 
@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ingredient_filter"
-                android:textSize="15dp" >
+                android:textSize="20dp" >
             </TextView>
         </RadioGroup>
     </LinearLayout>

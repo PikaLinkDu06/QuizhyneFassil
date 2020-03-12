@@ -22,6 +22,7 @@ public class FragmentRecette extends Fragment {
     String AREA_FILTER_URL = "https://www.themealdb.com/api/json/v1/1/filter.php?a=" ;
 
     String filterName ;
+    GetRecipe gr ;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,13 +54,16 @@ public class FragmentRecette extends Fragment {
 
         switch(filterName) {
             case "ingredient" :
-                new GetRecipe(rootView, INGREDIENT_FILTER_URL).execute() ;
+                gr = new GetRecipe(rootView, INGREDIENT_FILTER_URL) ;
+                gr.execute() ;
                 break ;
             case "category" :
-                new GetRecipe(rootView, CATEGORTY_FILTER_URL).execute() ;
+                gr = new GetRecipe(rootView, CATEGORTY_FILTER_URL) ;
+                gr.execute() ;
                 break ;
             case "area" :
-                new GetRecipe(rootView, AREA_FILTER_URL).execute() ;
+                gr = new GetRecipe(rootView, AREA_FILTER_URL) ;
+                gr.execute() ;
                 break ;
         }
 

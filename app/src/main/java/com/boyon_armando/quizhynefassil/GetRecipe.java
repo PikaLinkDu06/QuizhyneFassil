@@ -46,8 +46,9 @@ public class GetRecipe extends AsyncTask<Void, Void, Void> {
 
                     String nom = currentRecipe.getString("strMeal");
                     int id = currentRecipe.getInt("idMeal") ;
+                    String photoURL = currentRecipe.getString("strMealThumb") ;
 
-                    Recipe re = new Recipe(id, nom) ;
+                    Recipe re = new Recipe(id, nom, photoURL) ;
 
                     arrayListRecipe.add(re) ;
                 }
@@ -64,7 +65,7 @@ public class GetRecipe extends AsyncTask<Void, Void, Void> {
 
         final ListView listeViewRecipes = rootView.findViewById(R.id.listeViewRecettes) ;
 
-        ArrayAdapter<Recipe> adapter = new ArrayAdapter<>(rootView.getContext(), android.R.layout.simple_list_item_1, arrayListRecipe) ;
+        RecipeAdapter adapter = new RecipeAdapter(rootView.getContext(), arrayListRecipe) ;
         listeViewRecipes.setAdapter(adapter) ;
     }
 }
