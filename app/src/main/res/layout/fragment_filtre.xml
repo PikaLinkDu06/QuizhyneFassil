@@ -26,10 +26,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
         <TextView
-            android:layout_marginStart="5dp"
+          android:layout_marginStart="5dp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/zone_filter" >
+          android:text="@string/zone_filter"
+          android:textSize="15dp" >
         </TextView>
     </RadioGroup>
     
@@ -40,9 +41,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/categorie_filter" >
+            android:text="@string/categorie_filter"
+            android:textSize="15dp" >
         </TextView>
     </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/ingredientRadiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredient_filter"
+                android:textSize="15dp" >
+            </TextView>
+        </RadioGroup>
     </LinearLayout>
 
     </LinearLayout>

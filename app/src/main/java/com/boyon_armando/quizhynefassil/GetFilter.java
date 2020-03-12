@@ -20,6 +20,9 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
     String CATEGORY_URL = "https://www.themealdb.com/api/json/v1/1/list.php?c=list" ;
     ArrayList<String> listeCategory = new ArrayList<>() ;
 
+    String INGREDIENT_URL = "https://www.themealdb.com/api/json/v1/1/list.php?i=list" ;
+    ArrayList<String> listeIngredients = new ArrayList<>() ;
+
     View rootView;
 
     public GetFilter(View view) {
@@ -65,6 +68,25 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
                 e.printStackTrace();
             }
         }
+
+        String jsonIngredientString = sh.makeServiceCall(INGREDIENT_URL) ;
+
+        if(jsonIngredientString != null) {
+            try {
+                JSONObject jsonObj = new JSONObject(jsonIngredientString) ;
+
+                JSONArray ingredients = jsonObj.getJSONArray("meals") ;
+
+                for(int i = 0; i < ingredients.length(); i+=10) {
+                    JSONObject currentIngredient  = ingredients.getJSONObject(i);
+                    String ingredient = currentIngredient.getString("strIngredient") ;
+                    listeIngredients.add(ingredient) ;
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
         return null ;
         }
 
@@ -74,6 +96,7 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
 
         final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup) ;
         final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup) ;
+        final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup) ;
 
         if(!listeArea.isEmpty()) {
             for (String S : listeArea) {
@@ -90,6 +113,15 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
                 rb.setText(S);
                 rb.setId(View.generateViewId());
                 crg.addView(rb);
+            }
+        }
+
+        if(!listeIngredients.isEmpty()) {
+            for (String S : listeIngredients) {
+                RadioButton rb = new RadioButton(rootView.getContext());
+                rb.setText(S);
+                rb.setId(View.generateViewId());
+                irg.addView(rb);
             }
         }
     }

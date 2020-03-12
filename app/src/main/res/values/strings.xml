@@ -7,4 +7,5 @@
 
     <string name="zone_filter">Par zone : </string>
     <string name="categorie_filter">Par catégorie : </string>
+    <string name="ingredient_filter">Par ingrédient : </string>
 </resources>

@@ -412,6 +412,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color listViewDivider
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -776,6 +777,7 @@ id icon_group
 id ifRoom
 id image
 id info
+id ingredientRadiogroup
 id invisible
 id italic
 id left
@@ -783,6 +785,7 @@ id line1
 id line3
 id listMode
 id list_item
+id listeViewRecettes
 id message
 id middle
 id multiply
@@ -844,7 +847,6 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id test
 id text
 id text2
 id textSpacerNoButtons
@@ -950,6 +952,7 @@ string canada
 string categorie_filter
 string choix_filtre
 string france
+string ingredient_filter
 string search_menu_title
 string status_bar_notification_info_overflow
 string submit

@@ -24,8 +24,6 @@ public class FragmentFiltre extends Fragment {
     Fragment frag;
     FragmentTransaction fragTransaction;
 
-    public ArrayList<String> listeFiltresArea = new ArrayList<>() ;
-
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_filtre, container, false);
@@ -34,17 +32,24 @@ public class FragmentFiltre extends Fragment {
 
         final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup) ;
         final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup) ;
+        final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup) ;
 
         arg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if(crg.getCheckedRadioButtonId() != -1 && arg.getCheckedRadioButtonId() != -1) {
-                    crg.clearCheck();
-                    arg.check(i) ;
+                int selectedID = radioGroup.getCheckedRadioButtonId() ;
+
+                if (crg.getCheckedRadioButtonId() != -1 && selectedID != -1) {
+                    crg.clearCheck() ;
+                    radioGroup.check(selectedID) ;
                 }
-                else {
-                    RadioButton currentCheckedButton = rootView.findViewById(arg.getCheckedRadioButtonId()) ;
-                    changeFragment(currentCheckedButton.getText().toString()) ;
+                else if(irg.getCheckedRadioButtonId() != -1 && selectedID != -1) {
+                    irg.clearCheck() ;
+                    radioGroup.check(selectedID) ;
+                }
+                else if(selectedID != -1) {
+                    RadioButton currentCheckedButton = rootView.findViewById(selectedID);
+                    changeFragment("area", currentCheckedButton.getText().toString());
                 }
             }
         });
@@ -52,23 +57,52 @@ public class FragmentFiltre extends Fragment {
         crg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if(arg.getCheckedRadioButtonId() != -1 && crg.getCheckedRadioButtonId() != -1) {
+                int selectedID = radioGroup.getCheckedRadioButtonId() ;
+
+                if(arg.getCheckedRadioButtonId() != -1 && selectedID != -1) {
                     arg.clearCheck() ;
-                    crg.check(i) ;
+                    radioGroup.check(selectedID) ;
                 }
-                else {
-                    RadioButton currentCheckedButton = rootView.findViewById(crg.getCheckedRadioButtonId()) ;
-                    changeFragment(currentCheckedButton.getText().toString()) ;
+                else if(irg.getCheckedRadioButtonId() != -1 && selectedID != -1) {
+                    irg.clearCheck() ;
+                    radioGroup.check(selectedID) ;
+                }
+                else if(selectedID != -1) {
+                    RadioButton currentCheckedButton = rootView.findViewById(selectedID);
+                    changeFragment("category", currentCheckedButton.getText().toString()) ;
                 }
             }
         }) ;
+
+        irg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                int selectedID = radioGroup.getCheckedRadioButtonId() ;
+
+                if(arg.getCheckedRadioButtonId() != -1 && selectedID != -1) {
+                    arg.clearCheck() ;
+                    radioGroup.check(selectedID) ;
+                }
+                else if(crg.getCheckedRadioButtonId() != -1 && selectedID != -1) {
+                    crg.clearCheck() ;
+                    radioGroup.check(selectedID) ;
+                }
+                else if(selectedID != -1) {
+                    RadioButton currentCheckedButton = rootView.findViewById(selectedID);
+                    changeFragment("ingredient", currentCheckedButton.getText().toString()) ;
+                }
+            }
+        });
+
+
         return rootView ;
     }
 
-    public void changeFragment(String filter) {
+    public void changeFragment(String filterName, String filter) {
         frag = new FragmentRecette() ;
         Bundle args = new Bundle() ;
-        args.putString("filtre", filter) ;
+        args.putString("filter_name", filterName) ;
+        args.putString("filter", filter) ;
         frag.setArguments(args) ;
 
         fragTransaction = getFragmentManager().beginTransaction().replace(R.id.recettes, frag) ;

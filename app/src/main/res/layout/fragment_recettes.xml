@@ -3,15 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-   <!-- <ListView
+    <ListView
+        android:id="@+id/listeViewRecettes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </ListView> -->
-    
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </TextView>
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        android:divider="@color/listViewDivider" >
+    </ListView>
 
 </LinearLayout>
