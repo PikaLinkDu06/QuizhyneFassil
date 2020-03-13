@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">QüizhyneFassil</string>
-    <string name="choix_filtre">Choisissez un filtre : </string>
+    <string name="choix_filtre">Choose a filter</string>
 
     <string name="submit">Submit</string>
 
     <string name="slogan">La qüizhyne, sans faute</string>
 
-    <string name="zone_filter">Par zone : </string>
-    <string name="categorie_filter">Par catégorie : </string>
-    <string name="ingredient_filter">Par ingrédient : </string>
+    <string name="zone_filter">By area : </string>
+    <string name="categorie_filter">By category : </string>
+    <string name="ingredient_filter">By ingredient : </string>
+
+    <string name="needs">For this recipe, you need : \n</string>
+    <string name="preparation">Preparation : \n</string>
 </resources>

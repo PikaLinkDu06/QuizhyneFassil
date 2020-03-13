@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class RecipeAdapter extends BaseAdapter {
+
     private ArrayList<Recipe> recipeArrayList;
     private LayoutInflater mInflater; //Un mécanisme pour gérer l'affichage graphique depuis un layout XML
 
@@ -34,7 +35,7 @@ public class RecipeAdapter extends BaseAdapter {
     /**
      * surcharge obligatoire de BaseAdapter
      *
-     * @return nb de diplome à adapter
+     * @return nb de recettes à adapter
      */
     public int getCount() {
         return recipeArrayList.size();
@@ -78,7 +79,7 @@ public class RecipeAdapter extends BaseAdapter {
         //Loading image using Picasso
         Picasso.get().load(recipeArrayList.get(position).getRecipePhotoURL()).into(imageRecette);
 
-        //(6)On retourne l'item créé.
+        //(4)On retourne l'item créé.
         return layoutItem;
     }
 

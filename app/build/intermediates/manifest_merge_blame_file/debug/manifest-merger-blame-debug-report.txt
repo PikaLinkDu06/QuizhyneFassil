@@ -15,7 +15,7 @@
 11-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:4:22-64
 12
 13    <application
-13-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:6:5-22:19
+13-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:6:5-25:19
 14        android:allowBackup="true"
 14-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:7:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -32,33 +32,44 @@
 21        android:testOnly="true"
 22        android:theme="@style/HiddenTitleTheme" >
 22-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:12:9-48
-23        <activity android:name="com.boyon_armando.quizhynefassil.MainActivity" >
-23-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:13:9-19:20
-23-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:13:19-47
-24            <intent-filter>
-24-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:14:13-18:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:15:17-69
-25-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:15:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:17:17-77
-27-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:17:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity" >
-30-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:20:9-21:20
-30-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:20:19-55
+23        <activity
+23-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:13:9-20:20
+24            android:name="com.boyon_armando.quizhynefassil.MainActivity"
+24-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:13:19-47
+25            android:screenOrientation="portrait" >
+25-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:14:13-49
+26            <intent-filter>
+26-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:15:13-19:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:16:17-69
+27-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:16:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:18:17-77
+29-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:18:27-74
+30            </intent-filter>
 31        </activity>
-32
-33        <provider
-33-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-34            android:name="com.squareup.picasso.PicassoProvider"
-34-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-35            android:authorities="com.boyon_armando.quizhynefassil.com.squareup.picasso"
-35-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-36            android:exported="false" />
-36-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-37    </application>
+32        <activity
+32-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:21:9-22:52
+33            android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity"
+33-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:21:19-55
+34            android:screenOrientation="portrait" />
+34-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:22:13-49
+35        <activity
+35-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:23:9-24:52
+36            android:name="com.boyon_armando.quizhynefassil.RecipeInfoActivity"
+36-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:23:19-53
+37            android:screenOrientation="portrait" />
+37-->/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/src/main/AndroidManifest.xml:24:13-49
 38
-39</manifest>
+39        <provider
+39-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+40            android:name="com.squareup.picasso.PicassoProvider"
+40-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+41            android:authorities="com.boyon_armando.quizhynefassil.com.squareup.picasso"
+41-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+42            android:exported="false" />
+42-->[com.squareup.picasso:picasso:2.71828] /home/aj808812/.gradle/caches/transforms-2/files-2.1/05897e045d39a2f57955931526405768/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+43    </application>
+44
+45</manifest>

@@ -1,10 +1,13 @@
 package com.boyon_armando.quizhynefassil.web_request ;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.boyon_armando.quizhynefassil.R;
+import com.boyon_armando.quizhynefassil.RecipeInfoActivity;
 import com.boyon_armando.quizhynefassil.adapter.RecipeAdapter;
 import com.boyon_armando.quizhynefassil.classes.Recipe;
 
@@ -13,6 +16,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class GetRecipe extends AsyncTask<Void, Void, Void> {
 
@@ -71,4 +77,5 @@ public class GetRecipe extends AsyncTask<Void, Void, Void> {
         RecipeAdapter adapter = new RecipeAdapter(rootView.getContext(), arrayListRecipe) ;
         listeViewRecipes.setAdapter(adapter) ;
     }
+
 }

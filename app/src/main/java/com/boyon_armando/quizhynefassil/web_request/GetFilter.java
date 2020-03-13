@@ -1,5 +1,6 @@
 package com.boyon_armando.quizhynefassil.web_request ;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.RadioButton;
@@ -25,9 +26,20 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
     ArrayList<String> listeIngredients = new ArrayList<>() ;
 
     View rootView;
+    ProgressDialog pDialog ;
 
     public GetFilter(View view) {
         rootView = view ;
+    }
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+
+        pDialog = new ProgressDialog(rootView.getContext()) ;
+        pDialog.setMessage("Récupération des filtres en cours ...") ;
+        pDialog.setCancelable(false) ;
+        pDialog.show() ;
     }
 
     @Override
@@ -94,6 +106,8 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
+
+        if(pDialog.isShowing()) pDialog.dismiss() ;
 
         final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup) ;
         final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup) ;

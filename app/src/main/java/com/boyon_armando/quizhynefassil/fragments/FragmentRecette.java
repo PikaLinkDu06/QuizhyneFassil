@@ -1,11 +1,16 @@
 package com.boyon_armando.quizhynefassil.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import com.boyon_armando.quizhynefassil.R;
+import com.boyon_armando.quizhynefassil.RecipeInfoActivity;
+import com.boyon_armando.quizhynefassil.classes.Recipe;
 import com.boyon_armando.quizhynefassil.web_request.GetRecipe;
 
 import androidx.annotation.Nullable;
@@ -63,6 +68,19 @@ public class FragmentRecette extends Fragment {
                 gr.execute() ;
                 break ;
         }
+
+        final ListView listeViewRecettes = rootView.findViewById(R.id.listeViewRecettes) ;
+
+        listeViewRecettes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Recipe r = (Recipe) listeViewRecettes.getAdapter().getItem(position) ;
+
+                Intent intent = new Intent(rootView.getContext(), RecipeInfoActivity.class) ;
+                intent.putExtra("recipe", r) ;
+                startActivity(intent) ;
+            }
+        });
 
         return rootView;
     }

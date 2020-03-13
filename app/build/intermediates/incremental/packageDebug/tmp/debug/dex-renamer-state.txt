@@ -1,4 +1,4 @@
-#Fri Mar 13 09:09:55 CET 2020
+#Fri Mar 13 15:37:05 CET 2020
 base.0=/home/aj808812/AndroidStudioProjects/QuizhyneFassil/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

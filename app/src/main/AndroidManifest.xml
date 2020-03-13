@@ -10,15 +10,18 @@
         android:roundIcon="@mipmap/logo_application"
         android:supportsRtl="true"
         android:theme="@style/HiddenTitleTheme" >
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecipeChoiceActivity" >
-        </activity>
+        <activity android:name=".RecipeChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RecipeInfoActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
