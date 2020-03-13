@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">QuizhyneFassil</string>
+    <string name="app_name">QüizhyneFassil</string>
     <string name="choix_filtre">Choisissez un filtre : </string>
-    <string name="canada">Canada</string>
-    <string name="france">France</string>
+
     <string name="submit">Submit</string>
+
+    <string name="slogan">La qüizhyne, sans faute</string>
 
     <string name="zone_filter">Par zone : </string>
     <string name="categorie_filter">Par catégorie : </string>

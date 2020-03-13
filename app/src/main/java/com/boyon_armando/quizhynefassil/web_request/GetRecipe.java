@@ -1,9 +1,12 @@
-package com.boyon_armando.quizhynefassil;
+package com.boyon_armando.quizhynefassil.web_request ;
 
 import android.os.AsyncTask;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.boyon_armando.quizhynefassil.R;
+import com.boyon_armando.quizhynefassil.adapter.RecipeAdapter;
+import com.boyon_armando.quizhynefassil.classes.Recipe;
 
 import org.json.JSONArray;
 import org.json.JSONException;

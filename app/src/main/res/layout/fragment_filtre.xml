@@ -13,6 +13,7 @@
         android:text="@string/choix_filtre"
         android:textAlignment="center"
         android:textSize="25dp"
+        android:textColor="@color/black"
         android:layout_gravity="center">
     </TextView>
 

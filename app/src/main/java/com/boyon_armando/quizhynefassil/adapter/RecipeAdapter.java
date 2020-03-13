@@ -1,4 +1,4 @@
-package com.boyon_armando.quizhynefassil;
+package com.boyon_armando.quizhynefassil.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.boyon_armando.quizhynefassil.R;
+import com.boyon_armando.quizhynefassil.classes.Recipe;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

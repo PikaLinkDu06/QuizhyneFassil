@@ -1,20 +1,14 @@
-package com.boyon_armando.quizhynefassil;
+package com.boyon_armando.quizhynefassil.fragments;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
+import com.boyon_armando.quizhynefassil.R;
+import com.boyon_armando.quizhynefassil.web_request.GetFilter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;

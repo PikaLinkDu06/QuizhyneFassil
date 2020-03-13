@@ -1,10 +1,11 @@
-package com.boyon_armando.quizhynefassil;
+package com.boyon_armando.quizhynefassil.web_request ;
 
 import android.os.AsyncTask;
-import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.boyon_armando.quizhynefassil.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

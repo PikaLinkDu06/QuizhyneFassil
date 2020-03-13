@@ -14,9 +14,9 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_application"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_application"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/HiddenTitleTheme" >
@@ -26,6 +26,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity" >
         </activity>
 
         <provider

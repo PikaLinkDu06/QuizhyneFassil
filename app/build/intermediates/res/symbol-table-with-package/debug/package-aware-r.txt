@@ -23,6 +23,8 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+anim fade
+anim translation
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -788,10 +790,12 @@ id line3
 id listMode
 id list_item
 id listeViewRecettes
+id logo
 id message
 id middle
 id multiply
 id never
+id nomApp
 id none
 id normal
 id notification_background
@@ -829,6 +833,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sloganApp
 id spacer
 id split_action_bar
 id spread
@@ -917,6 +922,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recipe_choice_activity
 layout recipe_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -924,6 +930,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap logo_application
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -952,12 +959,11 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
-string canada
 string categorie_filter
 string choix_filtre
-string france
 string ingredient_filter
 string search_menu_title
+string slogan
 string status_bar_notification_info_overflow
 string submit
 string zone_filter
