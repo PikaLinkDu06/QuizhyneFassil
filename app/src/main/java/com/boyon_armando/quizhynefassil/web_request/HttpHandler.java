@@ -1,4 +1,4 @@
-package com.boyon_armando.quizhynefassil.web_request ;
+package com.boyon_armando.quizhynefassil.web_request;
 
 import android.util.Log;
 

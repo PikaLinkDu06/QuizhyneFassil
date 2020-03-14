@@ -20,21 +20,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/HiddenTitleTheme" >
-        <activity
-            android:name="com.boyon_armando.quizhynefassil.MainActivity"
-            android:screenOrientation="portrait" >
+        <activity android:name="com.boyon_armando.quizhynefassil.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.boyon_armando.quizhynefassil.RecipeInfoActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity" />
+        <activity android:name="com.boyon_armando.quizhynefassil.RecipeInfoActivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

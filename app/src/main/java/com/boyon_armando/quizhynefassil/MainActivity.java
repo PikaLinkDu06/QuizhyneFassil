@@ -16,16 +16,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ImageView logo = findViewById(R.id.logo) ;
-        final TextView nomApp = findViewById(R.id.nomApp) ;
-        final TextView slogApp = findViewById(R.id.sloganApp) ;
+        final ImageView logo = findViewById(R.id.logo);
+        final TextView nomApp = findViewById(R.id.nomApp);
+        final TextView slogApp = findViewById(R.id.sloganApp);
 
-        final Animation translate = AnimationUtils.loadAnimation(MainActivity.this, R.anim.translation) ;
-        final Animation fade = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade) ;
+        final Animation translate = AnimationUtils.loadAnimation(MainActivity.this, R.anim.translation);
+        final Animation fade = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade);
 
-        logo.startAnimation(translate) ;
-        nomApp.startAnimation(fade) ;
-        slogApp.startAnimation(fade) ;
+        logo.startAnimation(translate);
+        nomApp.startAnimation(fade);
+        slogApp.startAnimation(fade);
 
         translate.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -34,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                Intent intent = new Intent(MainActivity.this, RecipeChoiceActivity.class) ;
-                startActivity(intent) ;
+                Intent intent = new Intent(MainActivity.this, RecipeChoiceActivity.class);
+                startActivity(intent);
+                finish();
             }
 
             @Override

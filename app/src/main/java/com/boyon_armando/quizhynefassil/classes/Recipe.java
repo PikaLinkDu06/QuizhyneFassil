@@ -1,4 +1,4 @@
-package com.boyon_armando.quizhynefassil.classes ;
+package com.boyon_armando.quizhynefassil.classes;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -7,17 +7,17 @@ import java.util.ArrayList;
 
 public class Recipe implements Parcelable {
 
-    private int recipeId ;
-    private String recipeName ;
-    private String recipePhotoURL ;
-    private String steps ;
-    ArrayList<Ingredient> ingredients ;
+    private int recipeId;
+    private String recipeName;
+    private String recipePhotoURL;
+    private String steps;
+    ArrayList<Ingredient> ingredients;
 
     public Recipe(int id, String name, String photo) {
-        this.recipeId = id ;
-        this.recipeName = name ;
-        this.recipePhotoURL = photo ;
-        ingredients = new ArrayList<>() ;
+        this.recipeId = id;
+        this.recipeName = name;
+        this.recipePhotoURL = photo;
+        ingredients = new ArrayList<>();
     }
 
     protected Recipe(Parcel in) {
@@ -68,7 +68,7 @@ public class Recipe implements Parcelable {
 
     @Override
     public String toString() {
-        return recipeName ;
+        return recipeName;
     }
 
     @Override

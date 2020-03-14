@@ -2,12 +2,12 @@ package com.boyon_armando.quizhynefassil.classes;
 
 public class Ingredient {
 
-    private String ingredientName ;
-    private String quantity ;
+    private String ingredientName;
+    private String quantity;
 
     public Ingredient(String name, String quant) {
-        this.ingredientName = name ;
-        this.quantity = quant ;
+        this.ingredientName = name.trim();
+        this.quantity = quant.trim();
     }
 
     public String getIngredientName() {
@@ -20,6 +20,6 @@ public class Ingredient {
 
     @Override
     public String toString() {
-            return " -\t" + quantity + " of " + ingredientName + "\n" ;
+        return " -\t" + ingredientName + " : " + quantity + "\n";
     }
 }

@@ -1,4 +1,4 @@
-package com.boyon_armando.quizhynefassil.web_request ;
+package com.boyon_armando.quizhynefassil.web_request;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -16,125 +16,129 @@ import java.util.ArrayList;
 
 public class GetFilter extends AsyncTask<Void, Void, Void> {
 
-    String AREA_URL = " https://www.themealdb.com/api/json/v1/1/list.php?a=list" ;
-    ArrayList<String> listeArea = new ArrayList<>() ;
+    String AREA_URL = " https://www.themealdb.com/api/json/v1/1/list.php?a=list";
+    ArrayList<String> listeArea = new ArrayList<>();
 
-    String CATEGORY_URL = "https://www.themealdb.com/api/json/v1/1/list.php?c=list" ;
-    ArrayList<String> listeCategory = new ArrayList<>() ;
+    String CATEGORY_URL = "https://www.themealdb.com/api/json/v1/1/list.php?c=list";
+    ArrayList<String> listeCategory = new ArrayList<>();
 
-    String INGREDIENT_URL = "https://www.themealdb.com/api/json/v1/1/list.php?i=list" ;
-    ArrayList<String> listeIngredients = new ArrayList<>() ;
+    String INGREDIENT_URL = "https://www.themealdb.com/api/json/v1/1/list.php?i=list";
+    ArrayList<String> listeIngredients = new ArrayList<>();
 
     View rootView;
-    ProgressDialog pDialog ;
+    ProgressDialog pDialog;
 
     public GetFilter(View view) {
-        rootView = view ;
+        rootView = view;
     }
 
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
 
-        pDialog = new ProgressDialog(rootView.getContext()) ;
-        pDialog.setMessage("Récupération des filtres en cours ...") ;
-        pDialog.setCancelable(false) ;
-        pDialog.show() ;
+        pDialog = new ProgressDialog(rootView.getContext());
+        pDialog.setMessage("Récupération des filtres en cours ...");
+        pDialog.setCancelable(false);
+        pDialog.show();
     }
 
     @Override
     protected Void doInBackground(Void... voids) {
-        HttpHandler sh = new HttpHandler() ;
+        HttpHandler sh = new HttpHandler();
 
-        String jsonAreaString = sh.makeServiceCall(AREA_URL) ;
+        String jsonAreaString = sh.makeServiceCall(AREA_URL);
 
-        if(jsonAreaString != null) {
-                try {
-                    JSONObject jsonObj = new JSONObject(jsonAreaString) ;
-
-                    JSONArray areas = jsonObj.getJSONArray("meals") ;
-
-                    for(int i = 0; i < areas.length(); i++) {
-                        JSONObject currentArea  = areas.getJSONObject(i);
-                        String area = currentArea.getString("strArea") ;
-                        listeArea.add(area) ;
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        String jsonCategoryString = sh.makeServiceCall(CATEGORY_URL) ;
-
-        if(jsonCategoryString != null) {
+        if (jsonAreaString != null) {
             try {
-                JSONObject jsonObj = new JSONObject(jsonCategoryString) ;
+                JSONObject jsonObj = new JSONObject(jsonAreaString);
 
-                JSONArray categories = jsonObj.getJSONArray("meals") ;
+                JSONArray areas = jsonObj.getJSONArray("meals");
 
-                for(int i = 0; i < categories.length(); i++) {
-                    JSONObject currentCategory  = categories.getJSONObject(i);
-                    String category = currentCategory.getString("strCategory") ;
-                    listeCategory.add(category) ;
+                for (int i = 0; i < areas.length(); i++) {
+                    JSONObject currentArea = areas.getJSONObject(i);
+                    String area = currentArea.getString("strArea");
+                    listeArea.add(area);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-        String jsonIngredientString = sh.makeServiceCall(INGREDIENT_URL) ;
+        String jsonCategoryString = sh.makeServiceCall(CATEGORY_URL);
 
-        if(jsonIngredientString != null) {
+        if (jsonCategoryString != null) {
             try {
-                JSONObject jsonObj = new JSONObject(jsonIngredientString) ;
+                JSONObject jsonObj = new JSONObject(jsonCategoryString);
 
-                JSONArray ingredients = jsonObj.getJSONArray("meals") ;
+                JSONArray categories = jsonObj.getJSONArray("meals");
 
-                for(int i = 0; i < ingredients.length(); i+=10) {
-                    JSONObject currentIngredient  = ingredients.getJSONObject(i);
-                    String ingredient = currentIngredient.getString("strIngredient") ;
-                    listeIngredients.add(ingredient) ;
+                for (int i = 0; i < categories.length(); i++) {
+                    JSONObject currentCategory = categories.getJSONObject(i);
+                    String category = currentCategory.getString("strCategory");
+                    listeCategory.add(category);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-        return null ;
+        String jsonIngredientString = sh.makeServiceCall(INGREDIENT_URL);
+
+        if (jsonIngredientString != null) {
+            try {
+                JSONObject jsonObj = new JSONObject(jsonIngredientString);
+
+                JSONArray ingredients = jsonObj.getJSONArray("meals");
+
+                for (int i = 0; i < ingredients.length(); i += 10) {
+                    JSONObject currentIngredient = ingredients.getJSONObject(i);
+                    String ingredient = currentIngredient.getString("strIngredient");
+                    listeIngredients.add(ingredient);
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
+
+        return null;
+    }
 
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
 
-        if(pDialog.isShowing()) pDialog.dismiss() ;
+        if (pDialog.isShowing()) pDialog.dismiss();
 
-        final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup) ;
-        final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup) ;
-        final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup) ;
+        final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup);
+        final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup);
+        final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup);
 
-        if(!listeArea.isEmpty()) {
+        if (!listeArea.isEmpty()) {
             for (String S : listeArea) {
                 RadioButton rb = new RadioButton(rootView.getContext());
                 rb.setText(S);
-                rb.setId(View.generateViewId()) ;
+                rb.setTextSize(12);
+                rb.setId(View.generateViewId());
                 arg.addView(rb);
             }
         }
 
-        if(!listeCategory.isEmpty()) {
+        if (!listeCategory.isEmpty()) {
             for (String S : listeCategory) {
                 RadioButton rb = new RadioButton(rootView.getContext());
                 rb.setText(S);
+                rb.setTextSize(12);
                 rb.setId(View.generateViewId());
                 crg.addView(rb);
             }
         }
 
-        if(!listeIngredients.isEmpty()) {
+        if (!listeIngredients.isEmpty()) {
             for (String S : listeIngredients) {
                 RadioButton rb = new RadioButton(rootView.getContext());
+                rb.setTextSize(12);
                 rb.setText(S);
+                ;
                 rb.setId(View.generateViewId());
                 irg.addView(rb);
             }

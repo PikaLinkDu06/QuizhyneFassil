@@ -742,6 +742,7 @@ id alertTitle
 id always
 id areaRadiogroup
 id async
+id back
 id barrier
 id beginning
 id blocking
@@ -837,6 +838,7 @@ id showCustom
 id showHome
 id showTitle
 id sloganApp
+id sms_send
 id spacer
 id split_action_bar
 id spread
@@ -964,15 +966,16 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string back
 string categorie_filter
 string choix_filtre
 string ingredient_filter
 string needs
 string preparation
 string search_menu_title
+string send_by_sms
 string slogan
 string status_bar_notification_info_overflow
-string submit
 string zone_filter
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

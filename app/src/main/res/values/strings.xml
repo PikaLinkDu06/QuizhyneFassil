@@ -2,7 +2,8 @@
     <string name="app_name">QüizhyneFassil</string>
     <string name="choix_filtre">Choose a filter</string>
 
-    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="send_by_sms">Send It by SMS</string>
 
     <string name="slogan">La qüizhyne, sans faute</string>
 
