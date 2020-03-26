@@ -1,7 +1,6 @@
 package com.boyon_armando.quizhynefassil.web_request;
 
 import android.os.AsyncTask;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -76,7 +75,6 @@ public class GetRecipeInfo extends AsyncTask<Void, Void, Void> {
             needs += I.toString();
         }
         tvIngredients.setText(needs);
-        Log.d("RECETTE", RECIPE.getSteps());
         tvPreparation.setText(RECIPE.getSteps());
     }
 

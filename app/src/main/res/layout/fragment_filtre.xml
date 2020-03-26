@@ -25,7 +25,8 @@
     <RadioGroup
         android:id="@+id/areaRadiogroup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp" >
         <TextView
           android:layout_marginStart="5dp"
           android:layout_width="wrap_content"
@@ -38,7 +39,9 @@
     <RadioGroup
         android:id="@+id/categoryRadiogroup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +53,8 @@
         <RadioGroup
             android:id="@+id/ingredientRadiogroup"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp" >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

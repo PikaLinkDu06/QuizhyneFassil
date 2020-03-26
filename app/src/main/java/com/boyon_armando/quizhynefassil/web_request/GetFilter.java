@@ -7,6 +7,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.boyon_armando.quizhynefassil.R;
+import com.boyon_armando.quizhynefassil.fragments.FragmentFiltre;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -109,39 +110,6 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
 
         if (pDialog.isShowing()) pDialog.dismiss();
 
-        final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup);
-        final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup);
-        final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup);
-
-        if (!listeArea.isEmpty()) {
-            for (String S : listeArea) {
-                RadioButton rb = new RadioButton(rootView.getContext());
-                rb.setText(S);
-                rb.setTextSize(12);
-                rb.setId(View.generateViewId());
-                arg.addView(rb);
-            }
+        FragmentFiltre.addFilters(listeArea, listeCategory, listeIngredients) ;
         }
-
-        if (!listeCategory.isEmpty()) {
-            for (String S : listeCategory) {
-                RadioButton rb = new RadioButton(rootView.getContext());
-                rb.setText(S);
-                rb.setTextSize(12);
-                rb.setId(View.generateViewId());
-                crg.addView(rb);
-            }
-        }
-
-        if (!listeIngredients.isEmpty()) {
-            for (String S : listeIngredients) {
-                RadioButton rb = new RadioButton(rootView.getContext());
-                rb.setTextSize(12);
-                rb.setText(S);
-                ;
-                rb.setId(View.generateViewId());
-                irg.addView(rb);
-            }
-        }
-    }
 }
