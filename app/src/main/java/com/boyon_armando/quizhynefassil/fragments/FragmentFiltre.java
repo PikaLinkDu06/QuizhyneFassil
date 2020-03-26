@@ -19,8 +19,6 @@ import java.util.ArrayList;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import static android.content.Context.CONNECTIVITY_SERVICE;
-
 public class FragmentFiltre extends Fragment {
 
     Fragment frag;
