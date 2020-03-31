@@ -1,5 +1,6 @@
 package com.boyon_armando.quizhynefassil.classes;
 
+// Classe servant à la récuperation des différents ingrédients d'une recette
 public class Ingredient {
 
     private String ingredientName;

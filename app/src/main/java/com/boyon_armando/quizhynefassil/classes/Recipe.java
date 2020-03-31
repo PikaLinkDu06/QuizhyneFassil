@@ -5,6 +5,7 @@ import android.os.Parcelable;
 
 import java.util.ArrayList;
 
+// Classe permettant la création des recettes
 public class Recipe implements Parcelable {
 
     private int recipeId;

@@ -23,7 +23,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
     <RadioGroup
-        android:id="@+id/areaRadiogroup"
+        android:id="@+id/area_radiogroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp" >
@@ -37,7 +37,7 @@
     </RadioGroup>
     
     <RadioGroup
-        android:id="@+id/categoryRadiogroup"
+        android:id="@+id/category_radiogroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -51,7 +51,7 @@
     </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/ingredientRadiogroup"
+            android:id="@+id/ingredient_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp" >

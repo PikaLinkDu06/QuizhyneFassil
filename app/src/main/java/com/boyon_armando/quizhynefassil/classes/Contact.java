@@ -1,5 +1,6 @@
 package com.boyon_armando.quizhynefassil.classes;
 
+// Classe servant à la récuperation des contacts de l'utilisateur
 public class Contact {
 
     private String name ;

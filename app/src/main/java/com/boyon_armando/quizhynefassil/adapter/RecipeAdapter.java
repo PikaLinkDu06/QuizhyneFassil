@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+// Adapter permettant un bel affichage dans le FragmentRecette
 public class RecipeAdapter extends BaseAdapter {
 
     private ArrayList<Recipe> recipeArrayList;
@@ -70,9 +71,9 @@ public class RecipeAdapter extends BaseAdapter {
             layoutItem = (ConstraintLayout) convertView;
         }
 
-        //(2) : Récupération des TextView de notre layout
-        TextView tvNomRecette = layoutItem.findViewById(R.id.texteRecette);
-        ImageView imageRecette = layoutItem.findViewById(R.id.imageRecette);
+        //(2) : Récupération du TextView et de l'ImageView de notre layout
+        TextView tvNomRecette = layoutItem.findViewById(R.id.recipe_text);
+        ImageView imageRecette = layoutItem.findViewById(R.id.recipe_image);
 
         //(3) : Renseignement des valeurs
         tvNomRecette.setText(recipeArrayList.get(position).getRecipeName());

@@ -3,10 +3,7 @@ package com.boyon_armando.quizhynefassil.web_request;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.view.View;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
-import com.boyon_armando.quizhynefassil.R;
 import com.boyon_armando.quizhynefassil.fragments.FragmentFiltre;
 
 import org.json.JSONArray;
@@ -17,12 +14,15 @@ import java.util.ArrayList;
 
 public class GetFilter extends AsyncTask<Void, Void, Void> {
 
+    // Variables servant à stocker les filtres de zone
     String AREA_URL = " https://www.themealdb.com/api/json/v1/1/list.php?a=list";
     ArrayList<String> listeArea = new ArrayList<>();
 
+    // Variables servant à stocker les filtres de catégories
     String CATEGORY_URL = "https://www.themealdb.com/api/json/v1/1/list.php?c=list";
     ArrayList<String> listeCategory = new ArrayList<>();
 
+    // Variables servant à stocker les filtres d'ingrédient
     String INGREDIENT_URL = "https://www.themealdb.com/api/json/v1/1/list.php?i=list";
     ArrayList<String> listeIngredients = new ArrayList<>();
 
@@ -37,14 +37,17 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
     protected void onPreExecute() {
         super.onPreExecute();
 
+        // On indique à l'utilisateur qu'on récupere les différents filtres
         pDialog = new ProgressDialog(rootView.getContext());
-        pDialog.setMessage("Récupération des filtres en cours ...");
+        pDialog.setMessage("Loading filters ...");
         pDialog.setCancelable(false);
         pDialog.show();
     }
 
     @Override
     protected Void doInBackground(Void... voids) {
+
+        // On récupere les différents filtres en fonction des différentes URL
         HttpHandler sh = new HttpHandler();
 
         String jsonAreaString = sh.makeServiceCall(AREA_URL);
@@ -110,6 +113,7 @@ public class GetFilter extends AsyncTask<Void, Void, Void> {
 
         if (pDialog.isShowing()) pDialog.dismiss();
 
+        // On lance la fonction addFilters à la classe FragmentFiltre
         FragmentFiltre.addFilters(listeArea, listeCategory, listeIngredients) ;
         }
 }

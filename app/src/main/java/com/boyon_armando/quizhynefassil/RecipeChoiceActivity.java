@@ -14,7 +14,8 @@ public class RecipeChoiceActivity extends AppCompatActivity {
         setContentView(R.layout.recipe_choice_activity);
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().add(R.id.filtre, new FragmentFiltre()).commit();
+            // On lance le fragment qui gerera les différents filtres
+            getSupportFragmentManager().beginTransaction().add(R.id.filter, new FragmentFiltre()).commit();
         }
 
     }

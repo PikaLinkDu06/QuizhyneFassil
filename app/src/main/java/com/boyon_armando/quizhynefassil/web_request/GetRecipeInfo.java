@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 public class GetRecipeInfo extends AsyncTask<Void, Void, Void> {
 
+    // URL servant à la récupération des infos de la recette choisie
     String URL = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
 
     Recipe RECIPE;
@@ -32,6 +33,7 @@ public class GetRecipeInfo extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... voids) {
 
+        // On récupere les informations de la recette
         HttpHandler sh = new HttpHandler();
         ArrayList<Ingredient> ingredients = new ArrayList<>();
         String jsonRecipeInfoString = sh.makeServiceCall(URL);
@@ -68,7 +70,8 @@ public class GetRecipeInfo extends AsyncTask<Void, Void, Void> {
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
 
-        final TextView tvIngredients = rootView.findViewById(R.id.listeIngredients);
+        // On affiche les différents ingrédients ainsi que les étapes de la préparation
+        final TextView tvIngredients = rootView.findViewById(R.id.ingredient_list);
         final TextView tvPreparation = rootView.findViewById(R.id.steps);
 
         for (Ingredient I : RECIPE.getIngredients()) {

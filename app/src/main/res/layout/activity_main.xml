@@ -12,7 +12,7 @@
     </ImageView>
 
     <TextView
-        android:id="@+id/nomApp"
+        android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
@@ -21,7 +21,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/sloganApp"
+        android:id="@+id/app_slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/slogan"

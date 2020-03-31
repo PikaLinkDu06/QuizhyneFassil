@@ -29,6 +29,7 @@ public class GetRecipe extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... voids) {
 
+        // On récupere les différentes recettes en fonction de l'URL donnée
         HttpHandler sh = new HttpHandler();
 
         String jsonRecipeString = sh.makeServiceCall(URL);
@@ -66,7 +67,8 @@ public class GetRecipe extends AsyncTask<Void, Void, Void> {
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
 
-        final ListView listeViewRecipes = rootView.findViewById(R.id.listeViewRecettes);
+        // On récupere la ListView de la rootView passée en paramètre de la classe GetRecipe et on lui applique un RecipeAdapter
+        final ListView listeViewRecipes = rootView.findViewById(R.id.recipe_listview);
 
         RecipeAdapter adapter = new RecipeAdapter(rootView.getContext(), arrayListRecipe);
         listeViewRecipes.setAdapter(adapter);

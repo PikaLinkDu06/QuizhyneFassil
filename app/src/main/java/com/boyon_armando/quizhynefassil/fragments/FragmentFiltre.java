@@ -34,16 +34,19 @@ public class FragmentFiltre extends Fragment {
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_filtre, container, false);
 
+        // On teste si l'utilisateur a du réseau internet et que la récupération des filtres a déjà été fait
         if (haveNetwork()) {
-            if (areaList.isEmpty() || categoryList.isEmpty() || ingredientList.isEmpty())
+            if (areaList.isEmpty() && categoryList.isEmpty() && ingredientList.isEmpty())
                 new GetFilter(rootView).execute();
             else
                 afficherFiltres();
 
-            final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup);
-            final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup);
-            final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup);
+            final RadioGroup arg = rootView.findViewById(R.id.area_radiogroup);
+            final RadioGroup crg = rootView.findViewById(R.id.category_radiogroup);
+            final RadioGroup irg = rootView.findViewById(R.id.ingredient_radiogroup);
 
+            // Les différents listener suivants serviront à vérifier que l'utilisateur choisisse bien qu'un seul filtre et affichera dans le fragment des recettes ...
+            // ... les recettes correspondants  au filtre choisi
             arg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -102,6 +105,7 @@ public class FragmentFiltre extends Fragment {
         return rootView;
     }
 
+    // Fonction appelée dans la classe GetFilter et servant à remplir les différentes ArrayList
     public static void addFilters(ArrayList<String> listeArea, ArrayList<String> listeCategory, ArrayList<String> listeIngredients) {
         areaList = listeArea ;
         categoryList = listeCategory ;
@@ -110,10 +114,11 @@ public class FragmentFiltre extends Fragment {
         afficherFiltres() ;
     }
 
+    // Fonction servant à afficher les différents filtres
     public static void afficherFiltres() {
-        final RadioGroup arg = rootView.findViewById(R.id.areaRadiogroup);
-        final RadioGroup crg = rootView.findViewById(R.id.categoryRadiogroup);
-        final RadioGroup irg = rootView.findViewById(R.id.ingredientRadiogroup);
+        final RadioGroup arg = rootView.findViewById(R.id.area_radiogroup);
+        final RadioGroup crg = rootView.findViewById(R.id.category_radiogroup);
+        final RadioGroup irg = rootView.findViewById(R.id.ingredient_radiogroup);
 
 
         if (!areaList.isEmpty()) {
@@ -148,6 +153,7 @@ public class FragmentFiltre extends Fragment {
 
     }
 
+    // Fonction permettant de changer le fragment des recettes en fonction du filtre choisi
     public void changeFragment(String filterName, String filter) {
         frag = new FragmentRecette();
         Bundle args = new Bundle();
@@ -155,10 +161,11 @@ public class FragmentFiltre extends Fragment {
         args.putString("filter", filter);
         frag.setArguments(args);
 
-        fragTransaction = getFragmentManager().beginTransaction().replace(R.id.recettes, frag);
+        fragTransaction = getFragmentManager().beginTransaction().replace(R.id.recipes, frag);
         fragTransaction.commit();
     }
 
+    // Fonction permettant de verifier que l'utilisateur possède bien une connexion internet
     private boolean haveNetwork() {
         ConnectivityManager cm = (ConnectivityManager)rootView.getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
 
