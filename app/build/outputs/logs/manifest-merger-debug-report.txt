@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
@@ -27,29 +27,37 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Julien.000\.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:3:5-47
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:3:5-47
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-24:12
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:6:5-72
+	android:name
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:6:22-69
 application
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:6:5-22:19
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:8:5-24:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
@@ -61,43 +69,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ju
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:10:9-53
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:12:9-53
 	android:icon
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:8:9-48
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:10:9-48
 	android:allowBackup
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:12:9-48
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:14:9-48
 activity#com.boyon_armando.quizhynefassil.MainActivity
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.boyon_armando.quizhynefassil.RecipeChoiceActivity
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:20:9-58
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:22:9-58
 	android:name
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:20:19-55
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:22:19-55
 activity#com.boyon_armando.quizhynefassil.RecipeInfoActivity
-ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:21:9-56
+ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:23:9-56
 	android:name
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:21:19-53
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:23:19-53
 uses-sdk
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
@@ -144,16 +152,16 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Julien.0
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		ADDED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		ADDED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities

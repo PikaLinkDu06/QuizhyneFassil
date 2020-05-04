@@ -6,61 +6,67 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="20"
-8-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+8-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml
+9-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:5-67
-11-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:22-64
-12
-13    <application
-13-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:6:5-22:19
-14        android:allowBackup="true"
-14-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:7:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.1.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:icon="@mipmap/logo_application"
-17-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:8:9-48
-18        android:label="@string/app_name"
-18-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:9:9-41
-19        android:roundIcon="@mipmap/logo_application"
-19-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:10:9-53
-20        android:supportsRtl="true"
-20-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:11:9-35
-21        android:testOnly="true"
-22        android:theme="@style/HiddenTitleTheme" >
-22-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:12:9-48
-23        <activity android:name="com.boyon_armando.quizhynefassil.MainActivity" >
-23-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:13:9-19:20
-23-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:13:19-47
-24            <intent-filter>
-24-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:14:13-18:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:17-69
-25-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:17-77
-27-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity" />
-30-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:20:9-58
-30-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:20:19-55
-31        <activity android:name="com.boyon_armando.quizhynefassil.RecipeInfoActivity" />
-31-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:21:9-56
-31-->D:\Bureau\Projet_Mobile\QuizhyneFassil\app\src\main\AndroidManifest.xml:21:19-53
-32
-33        <provider
-33-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-34            android:name="com.squareup.picasso.PicassoProvider"
-34-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-35            android:authorities="com.boyon_armando.quizhynefassil.com.squareup.picasso"
-35-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-36            android:exported="false" />
-36-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-37    </application>
-38
-39</manifest>
+11-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:5:5-79
+12-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:6:5-72
+13-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:6:22-69
+14
+15    <application
+15-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:8:5-24:19
+16        android:allowBackup="true"
+16-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:9:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/logo_application"
+19-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:10:9-48
+20        android:label="@string/app_name"
+20-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/logo_application"
+21-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:12:9-53
+22        android:supportsRtl="true"
+22-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/HiddenTitleTheme" >
+24-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:14:9-48
+25        <activity android:name="com.boyon_armando.quizhynefassil.MainActivity" >
+25-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:9-21:20
+25-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:15:19-47
+26            <intent-filter>
+26-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:17-69
+27-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:19:17-77
+29-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.boyon_armando.quizhynefassil.RecipeChoiceActivity" />
+32-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:22:9-58
+32-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:22:19-55
+33        <activity android:name="com.boyon_armando.quizhynefassil.RecipeInfoActivity" />
+33-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:23:9-56
+33-->D:\Bureau\Projets_IUT\QuizhyneFassil\app\src\main\AndroidManifest.xml:23:19-53
+34
+35        <provider
+35-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+36            android:name="com.squareup.picasso.PicassoProvider"
+36-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+37            android:authorities="com.boyon_armando.quizhynefassil.com.squareup.picasso"
+37-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+38            android:exported="false" />
+38-->[com.squareup.picasso:picasso:2.71828] C:\Users\Julien.000\.gradle\caches\transforms-2\files-2.1\58aa0bdc301fecc0bb1a14b544a19626\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+39    </application>
+40
+41</manifest>

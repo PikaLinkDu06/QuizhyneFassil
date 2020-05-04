@@ -1,4 +1,4 @@
-#Sat Mar 14 13:47:28 CET 2020
-base.0=D\:\\Bureau\\Projet_Mobile\\QuizhyneFassil\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Thu Apr 02 10:23:58 CEST 2020
+base.0=D\:\\Bureau\\Projets_IUT\\QuizhyneFassil\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
